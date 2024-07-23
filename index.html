@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+           
+            #title{
+                font-family: helvetica;
+                font-weight: bold;
+                position: absolute;
+                left:15vw;
+                
+                text-align: center;
+            }
+            #counter{
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                position: absolute;
+                right:15vw;
+                top:5vh;
+            }
+            #description{
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: lighter;
+                font-weight: 1;
+                position: absolute;
+            }
+            #name{
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: lighter;
+                position: absolute;
+            }
+            #myCanvas{
+                position: absolute;
+                left: 15vw;
+                width: 70vw;
+                height: 70vh;
+                display: block;
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                
+            }
+            #pCanvas{
+                position: absolute;
+                left: 15vw;
+                width: 70vw;
+                height: 70vh;
+                display: block;
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                
+            }
+            .instructions{
+                position: absolute;
+                font-weight: lighter;
+                left : 15vw;
+                top: 10vh;
+                width: 70vw;
+                display: flex;
+                flex-direction: row; /* Align children vertically */
+                gap: 10px;
+                
+            }
+            .instructions p{
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 100px;
+                
+                margin: 0;
+                
+            }
+        </style>
+
+    </head>
+    <body>
+        
+        <h1 id="title">UNKNOWN</h1>
+        <h1 id="counter">#0</h1>
+        <p id="description">Description</p>
+        <p id="name">Arthur Effront</p>
+        
+       
+        <div class="instructions" id="desktopInstructions" style="display: none; font-size: 2vh;">
+            
+            <p>PRESS 'N' to generate</p>
+            <p>PRESS 'Space' to animate </p>
+            
+        </div>
+        <div class="instructions" id="mobileInstructions" style="display: none;">
+            <p>TOUCH to generate</p>
+        </div>
+        <canvas id="myCanvas"></canvas>
+        <canvas id="pCanvas"></canvas>
+        <script src="script.js"></script>
+        
+    </body>
+</html>
