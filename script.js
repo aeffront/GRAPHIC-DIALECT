@@ -1,1 +1,403 @@
-const _0xad6686=_0x23da;(function(_0x1031a5,_0x59c344){const _0x1dae62=_0x23da,_0x514d05=_0x1031a5();while(!![]){try{const _0xda8ce9=parseInt(_0x1dae62(0x19e))/0x1*(parseInt(_0x1dae62(0x1ab))/0x2)+parseInt(_0x1dae62(0x184))/0x3*(-parseInt(_0x1dae62(0x176))/0x4)+-parseInt(_0x1dae62(0x187))/0x5+-parseInt(_0x1dae62(0x1ca))/0x6+-parseInt(_0x1dae62(0x19d))/0x7+parseInt(_0x1dae62(0x17c))/0x8*(-parseInt(_0x1dae62(0x1cc))/0x9)+parseInt(_0x1dae62(0x185))/0xa*(parseInt(_0x1dae62(0x19a))/0xb);if(_0xda8ce9===_0x59c344)break;else _0x514d05['push'](_0x514d05['shift']());}catch(_0x4875d4){_0x514d05['push'](_0x514d05['shift']());}}}(_0x5465,0x61f1b));const desktopInstructions=document[_0xad6686(0x1a0)](_0xad6686(0x1b6)),mobileInstructions=document['getElementById']('mobileInstructions'),title=document[_0xad6686(0x1a0)](_0xad6686(0x1d4)),canvas=document[_0xad6686(0x1a0)]('myCanvas'),counter=document['getElementById'](_0xad6686(0x1cd)),description=document[_0xad6686(0x1a0)](_0xad6686(0x1aa)),Aname=document[_0xad6686(0x1a0)](_0xad6686(0x170)),pCanvas=document[_0xad6686(0x1a0)]('pCanvas'),screenWidth=screen[_0xad6686(0x1bd)];function _0x5465(){const _0x3ec055=['lineWidth','xgrow','beginPath','bezierCurveTo','5621yfyRlx','touchstart','Instance\x20saved\x20to\x20file.','91329WzLGfq','275987ZZyNhj','fillSquare','getElementById','sin','push','createElement','KeyN','none','\x20x\x20','Space','0vh',',70%,50%,1)','description','2kbOJaO','Number\x20of\x20grids\x20:\x20','.png','destination','origin','black','squareOversize','draw','right','random','\x20\x20Dimensions\x20:\x20','desktopInstructions','download','height','getContext','hsla(','left','points','width','7vh','90vh','animationDepth','pathWidth','3vh','block','mirror','squareWidth','chaos','top','10vh','exp','1704318KoIFFO','squarecolor','1889622kNmnXk','counter','2vh','paths','animate','17vh','display','ygrow','title','pathBend','pathcolor','log','animationSpeed','addEventListener','click','build','color','length','name','moveTo','bend','Yspacing','animationIndex','innerHeight','52SzGyAj','innerWidth','15vw','fillRect','keydown','animateGrid','8vNKJSN','80vh','style','fillStyle','83vh','Xspacing',',60%,70%,1)','Code:','121773EJpcLH','36250DDzPcR','strokeStyle','3462210rJssAD','isAnimated','strokeRect','\x20\x20Base\x20color\x20:\x20','padding','red','fontSize','division','1vh','oToD','margin','floor','code','innerHTML','forEach'];_0x5465=function(){return _0x3ec055;};return _0x5465();}screenWidth<0x1f4?(title[_0xad6686(0x17e)][_0xad6686(0x1c7)]=_0xad6686(0x1c2),title['style']['fontSize']=_0xad6686(0x1ce),counter[_0xad6686(0x17e)][_0xad6686(0x1c7)]='3vh',counter[_0xad6686(0x17e)][_0xad6686(0x18d)]=_0xad6686(0x1ce),desktopInstructions[_0xad6686(0x17e)]['display']=_0xad6686(0x1a5),mobileInstructions[_0xad6686(0x17e)][_0xad6686(0x1d2)]=_0xad6686(0x1c3),mobileInstructions[_0xad6686(0x17e)][_0xad6686(0x1c7)]=_0xad6686(0x1be),mobileInstructions[_0xad6686(0x17e)]['fontSize']=_0xad6686(0x18f),canvas['style'][_0xad6686(0x1c7)]=_0xad6686(0x1c8),description[_0xad6686(0x17e)]['top']=_0xad6686(0x17d),description[_0xad6686(0x17e)][_0xad6686(0x1bb)]=_0xad6686(0x178),description['style'][_0xad6686(0x18d)]=_0xad6686(0x18f),Aname[_0xad6686(0x17e)]['left']='15vw',Aname['style'][_0xad6686(0x1c7)]=_0xad6686(0x180),pCanvas[_0xad6686(0x17e)][_0xad6686(0x1d2)]=_0xad6686(0x1a5)):(title[_0xad6686(0x17e)][_0xad6686(0x18b)]=_0xad6686(0x1a5),title[_0xad6686(0x17e)]['top']=_0xad6686(0x1a8),counter[_0xad6686(0x17e)][_0xad6686(0x1c7)]=_0xad6686(0x18f),desktopInstructions[_0xad6686(0x17e)][_0xad6686(0x1d2)]=_0xad6686(0x1c3),desktopInstructions[_0xad6686(0x17e)][_0xad6686(0x18d)]=_0xad6686(0x1ce),desktopInstructions['style'][_0xad6686(0x1c7)]=_0xad6686(0x1c8),mobileInstructions[_0xad6686(0x17e)][_0xad6686(0x1d2)]=_0xad6686(0x1a5),canvas['style'][_0xad6686(0x1c7)]=_0xad6686(0x1d1),pCanvas[_0xad6686(0x17e)][_0xad6686(0x1c7)]='17vh',description[_0xad6686(0x17e)][_0xad6686(0x1c7)]='90vh',description[_0xad6686(0x17e)][_0xad6686(0x1bb)]='15vw',description['style'][_0xad6686(0x18d)]='2vh',Aname[_0xad6686(0x17e)][_0xad6686(0x1b3)]=_0xad6686(0x178),Aname['style'][_0xad6686(0x1c7)]=_0xad6686(0x1bf));let counterVal=0x0;function _0x23da(_0x281c52,_0x95861d){const _0x546505=_0x5465();return _0x23da=function(_0x23da9f,_0x217af4){_0x23da9f=_0x23da9f-0x16e;let _0xb0076b=_0x546505[_0x23da9f];return _0xb0076b;},_0x23da(_0x281c52,_0x95861d);}const ctx=canvas[_0xad6686(0x1b9)]('2d'),width=canvas[_0xad6686(0x1bd)]=window[_0xad6686(0x177)]*0x2,height=canvas[_0xad6686(0x1b8)]=window[_0xad6686(0x175)]*0x2;console[_0xad6686(0x1d7)](screen[_0xad6686(0x1bd)]),console[_0xad6686(0x1d7)]('a');class vector{constructor(_0x4da64e,_0x1e05a7){this['x']=_0x4da64e,this['y']=_0x1e05a7;}}class point{constructor(_0x319138,_0x4f9ff1){const _0x1f0bf0=_0xad6686;this['x']=_0x319138,this['y']=_0x4f9ff1,this[_0x1f0bf0(0x197)]=Math[_0x1f0bf0(0x1b4)](),this[_0x1f0bf0(0x1d3)]=Math[_0x1f0bf0(0x1b4)]();}[_0xad6686(0x1c4)](_0x30e13d){const _0xa4b377=_0x30e13d['x']+(_0x30e13d['x']-this['x']),_0x58d74e=_0x30e13d['y']+(_0x30e13d['y']-this['y']);return new point(_0xa4b377,_0x58d74e);}[_0xad6686(0x190)](){}}class path{constructor(_0x88137a,_0xcfcb40,_0x11bec1,_0x5ba3ea=0x64,_0x533f06='black',_0x3968d9=0x3){const _0x45a236=_0xad6686;this[_0x45a236(0x172)]=_0x5ba3ea,this[_0x45a236(0x1af)]=_0x88137a,this['destination']=_0xcfcb40,this['length']=_0x11bec1,this[_0x45a236(0x1bc)]=[this['origin'],this[_0x45a236(0x1af)]],this[_0x45a236(0x16e)]=_0x533f06,this[_0x45a236(0x196)]=_0x3968d9;}[_0xad6686(0x1db)](){const _0x47e653=_0xad6686;this[_0x47e653(0x1bc)]=[this[_0x47e653(0x1af)],this['origin']];for(let _0x17c1c6=0x0;_0x17c1c6<this[_0x47e653(0x16f)];_0x17c1c6++){const _0x3ab3f2=new point(this[_0x47e653(0x1af)]['x']+Math[_0x47e653(0x1b4)]()*(this[_0x47e653(0x1ae)]['x']-this[_0x47e653(0x1af)]['x']),this[_0x47e653(0x1af)]['y']+Math[_0x47e653(0x1b4)]()*(this['destination']['y']-this[_0x47e653(0x1af)]['y'])),_0x538e13=new point(_0x3ab3f2['x']+Math[_0x47e653(0x1b4)]()*this[_0x47e653(0x172)],_0x3ab3f2['y']+Math[_0x47e653(0x1b4)]()*this[_0x47e653(0x172)]),_0x1ab4ac=_0x538e13['mirror'](_0x3ab3f2);this[_0x47e653(0x1bc)]['push'](_0x538e13),this['points'][_0x47e653(0x1a2)](_0x3ab3f2),this[_0x47e653(0x1bc)][_0x47e653(0x1a2)](_0x1ab4ac);}const _0x26a650=new point(this[_0x47e653(0x1ae)]['x']+Math[_0x47e653(0x1b4)]()*this[_0x47e653(0x172)],this[_0x47e653(0x1ae)]['y']+Math[_0x47e653(0x1b4)]()*this[_0x47e653(0x172)]),_0x2c47aa=_0x26a650[_0x47e653(0x1c4)](this[_0x47e653(0x1ae)]);this[_0x47e653(0x1bc)][_0x47e653(0x1a2)](_0x26a650),this['points'][_0x47e653(0x1a2)](this[_0x47e653(0x1ae)]),this[_0x47e653(0x1bc)]['push'](_0x2c47aa);}[_0xad6686(0x1d0)](_0x23e08b,_0x53a81e,_0x1753c1){const _0x1c4c25=_0xad6686;if(_0x53a81e==0x1)this[_0x1c4c25(0x1bc)][_0x1c4c25(0x195)](_0x51ddb4=>{const _0x23ce94=_0x1c4c25;_0x51ddb4['x']=_0x51ddb4['x']+_0x51ddb4[_0x23ce94(0x197)]*_0x23e08b,_0x51ddb4['y']=_0x51ddb4['y']+_0x51ddb4[_0x23ce94(0x1d3)]*_0x23e08b;});else{if(_0x53a81e==0x1)this[_0x1c4c25(0x172)]=this[_0x1c4c25(0x172)]+_0x1753c1*_0x23e08b;else _0x53a81e==0x2&&(this['lineWidth']=this[_0x1c4c25(0x196)]+_0x1753c1*_0x23e08b*0.1);}}[_0xad6686(0x1b2)](){const _0x407a9d=_0xad6686;ctx[_0x407a9d(0x196)]=this[_0x407a9d(0x196)],ctx[_0x407a9d(0x186)]=this[_0x407a9d(0x16e)];;for(let _0x49013f=0x0;_0x49013f<this[_0x407a9d(0x16f)]+0x1;_0x49013f++){const _0x49ea28=_0x49013f*0x3;ctx[_0x407a9d(0x198)](),ctx[_0x407a9d(0x171)](this[_0x407a9d(0x1bc)][_0x49ea28]['x'],this['points'][_0x49ea28]['y']),ctx[_0x407a9d(0x199)](this[_0x407a9d(0x1bc)][_0x49ea28+0x1]['x'],this[_0x407a9d(0x1bc)][_0x49ea28+0x1]['y'],this[_0x407a9d(0x1bc)][_0x49ea28+0x2]['x'],this[_0x407a9d(0x1bc)][_0x49ea28+0x2]['y'],this[_0x407a9d(0x1bc)][_0x49ea28+0x3]['x'],this['points'][_0x49ea28+0x3]['y']),ctx['stroke']();}}}class grid{constructor(_0x1bc7af,_0x2e80b4,_0x515920,_0x68bfa3,_0x350ac7=![],_0x36e26a=![],_0x2b1d31=0xa,_0x53cea0=_0xad6686(0x18c),_0x5f35b3=0x3,_0x57aa04=_0xad6686(0x1b0),_0x23efd4=0x64,_0x1b8d4b=0x0,_0x57f184=0x0,_0x26b579=0x0,_0x4f2280,_0x166c38,_0x3e0d86=![]){const _0x164421=_0xad6686;this[_0x164421(0x1af)]=_0x1bc7af,this[_0x164421(0x1bd)]=_0x2e80b4,this[_0x164421(0x1b8)]=_0x515920,this[_0x164421(0x18e)]=_0x68bfa3,this[_0x164421(0x181)]=Math[_0x164421(0x192)](this[_0x164421(0x1bd)]/this[_0x164421(0x18e)]),this[_0x164421(0x173)]=Math[_0x164421(0x192)](this[_0x164421(0x1b8)]/this[_0x164421(0x18e)]),this[_0x164421(0x1cf)]=[],this[_0x164421(0x1d5)]=_0x23efd4,this['showSquares']=_0x350ac7,this[_0x164421(0x1c5)]=_0x2b1d31,this[_0x164421(0x1c1)]=_0x5f35b3,this[_0x164421(0x1d6)]=_0x57aa04,this['squarecolor']=_0x53cea0,this['margin']=_0x1b8d4b,this[_0x164421(0x1c6)]=_0x57f184,this[_0x164421(0x1b1)]=_0x26b579,this[_0x164421(0x19f)]=_0x36e26a,this[_0x164421(0x1d8)]=_0x4f2280,this[_0x164421(0x1c0)]=_0x166c38*_0x2e80b4*0.001,this[_0x164421(0x188)]=_0x3e0d86,this[_0x164421(0x174)];if(_0x3e0d86)this[_0x164421(0x174)]=Math['floor'](Math[_0x164421(0x1b4)]()*0x4);else this[_0x164421(0x174)]=0x0;}['build'](){const _0x8e2d2d=_0xad6686;for(let _0x27617d=0x0;_0x27617d<this[_0x8e2d2d(0x18e)];_0x27617d++){for(let _0x796cd9=0x0;_0x796cd9<this[_0x8e2d2d(0x18e)];_0x796cd9++){const _0x398b26=new point(this[_0x8e2d2d(0x1af)]['x']+_0x796cd9*this[_0x8e2d2d(0x181)]+(0x0+this[_0x8e2d2d(0x1c6)]*Math[_0x8e2d2d(0x1b4)]())*this[_0x8e2d2d(0x181)],this['origin']['y']+_0x27617d*this[_0x8e2d2d(0x173)]+(0x0+this['chaos']*Math[_0x8e2d2d(0x1b4)]())*this[_0x8e2d2d(0x173)]),_0x24658b=new point(this[_0x8e2d2d(0x1af)]['x']+_0x796cd9*this[_0x8e2d2d(0x181)]+(0x1-this[_0x8e2d2d(0x1c6)]*Math[_0x8e2d2d(0x1b4)]())*this[_0x8e2d2d(0x181)]-this[_0x8e2d2d(0x191)]*this[_0x8e2d2d(0x173)],this[_0x8e2d2d(0x1af)]['y']+_0x27617d*this[_0x8e2d2d(0x173)]+(0x1-this[_0x8e2d2d(0x1c6)]*Math[_0x8e2d2d(0x1b4)]())*this[_0x8e2d2d(0x173)]-this[_0x8e2d2d(0x191)]*this[_0x8e2d2d(0x173)]),_0x2d37a8=new path(_0x398b26,_0x24658b,0x3,this['pathBend']);this[_0x8e2d2d(0x1cf)]['push'](_0x2d37a8);}}this['paths'][_0x8e2d2d(0x195)](_0x5e423a=>{const _0x2d5b09=_0x8e2d2d;if(this['showSquares']){ctx[_0x2d5b09(0x196)]=this[_0x2d5b09(0x1c5)],ctx[_0x2d5b09(0x186)]=this['squarecolor'],ctx[_0x2d5b09(0x17f)]=this[_0x2d5b09(0x1cb)];const _0x5b1433=_0x5e423a[_0x2d5b09(0x1ae)]['x']-_0x5e423a[_0x2d5b09(0x1af)]['x'],_0x58a68a=_0x5e423a[_0x2d5b09(0x1ae)]['y']-_0x5e423a['origin']['y'];if(this[_0x2d5b09(0x19f)])ctx[_0x2d5b09(0x179)](_0x5e423a['origin']['x']-this['squareOversize'],_0x5e423a[_0x2d5b09(0x1af)]['y']-this['squareOversize'],_0x5b1433+this[_0x2d5b09(0x1b1)]*0x2,_0x58a68a+this['squareOversize']*0x2);else ctx['strokeRect'](_0x5e423a[_0x2d5b09(0x1af)]['x']-this[_0x2d5b09(0x1b1)],_0x5e423a[_0x2d5b09(0x1af)]['y']-this[_0x2d5b09(0x1b1)],_0x5b1433+this[_0x2d5b09(0x1b1)]*0x2,_0x58a68a+this[_0x2d5b09(0x1b1)]*0x2);}_0x5e423a[_0x2d5b09(0x1db)](),_0x5e423a[_0x2d5b09(0x196)]=this[_0x2d5b09(0x1c1)],_0x5e423a[_0x2d5b09(0x16e)]=this['pathcolor'];});}[_0xad6686(0x17b)](_0x134211){const _0x2750d4=_0xad6686;if(this['isAnimated']){if(this['animationIndex']<0x3)this[_0x2750d4(0x1cf)][_0x2750d4(0x195)](_0x30c8cf=>{const _0x11e4ff=_0x2750d4;_0x30c8cf['animate'](Math[_0x11e4ff(0x1a1)](_0x134211*this['animationSpeed'])*this[_0x11e4ff(0x1c0)],this[_0x11e4ff(0x174)],this[_0x11e4ff(0x1c0)]);});else this['animationIndex']==0x3&&(this[_0x2750d4(0x1b1)]=this[_0x2750d4(0x1b1)]+this['squareOversize']*this[_0x2750d4(0x1c0)]*Math[_0x2750d4(0x1a1)](_0x134211*this[_0x2750d4(0x1d8)])*0.01);}}['draw'](){const _0x20c130=_0xad6686;this[_0x20c130(0x1cf)][_0x20c130(0x195)](_0x4def32=>{const _0x16f966=_0x20c130;if(this['showSquares']){ctx[_0x16f966(0x196)]=this[_0x16f966(0x1c5)],ctx[_0x16f966(0x186)]=this[_0x16f966(0x1cb)],ctx['fillStyle']=this['squarecolor'];const _0x3a468c=_0x4def32[_0x16f966(0x1ae)]['x']-_0x4def32[_0x16f966(0x1af)]['x'],_0x4ee15e=_0x4def32[_0x16f966(0x1ae)]['y']-_0x4def32['origin']['y'];if(this[_0x16f966(0x19f)])ctx[_0x16f966(0x179)](_0x4def32['origin']['x']-this['squareOversize'],_0x4def32['origin']['y']-this['squareOversize'],_0x3a468c+this[_0x16f966(0x1b1)]*0x2,_0x4ee15e+this[_0x16f966(0x1b1)]*0x2);else ctx[_0x16f966(0x189)](_0x4def32['origin']['x']-this['squareOversize'],_0x4def32[_0x16f966(0x1af)]['y']-this[_0x16f966(0x1b1)],_0x3a468c+this['squareOversize']*0x2,_0x4ee15e+this[_0x16f966(0x1b1)]*0x2);}}),this[_0x20c130(0x1cf)][_0x20c130(0x195)](_0x418659=>{const _0x37f14c=_0x20c130;_0x418659[_0x37f14c(0x1b2)]();});}}let grids=[],color=Math[_0xad6686(0x192)](0x168*Math['random']()),descriptionTXT;function generate(){const _0x1e8b3b=_0xad6686,_0x2a36b0=Math[_0x1e8b3b(0x192)](0xa+Math[_0x1e8b3b(0x1b4)]()*0x64);for(let _0x948c58=0x0;_0x948c58<_0x2a36b0;_0x948c58++){const _0x40db58=new point(Math[_0x1e8b3b(0x1b4)]()*width,Math[_0x1e8b3b(0x1b4)]()*height),_0xf05609=width-_0x40db58['x'],_0xc0e277=height-_0x40db58['y'],_0x52675f=Math[_0x1e8b3b(0x1b4)]()*_0xf05609-0x64,_0x22c9c9=Math['random']()*_0xc0e277-0x64;let _0x29c5a3;if(Math['random']()>0.5)_0x29c5a3=Math['floor'](Math['random']()*width*0.01);else _0x29c5a3=Math['floor'](Math['random']()*height*0.01);let _0x143ce0,_0x45d068,_0x2267b9,_0x3dd733=_0x52675f*0.001+Math[_0x1e8b3b(0x1b4)]()*_0x52675f*0.01,_0xea121c=_0x1e8b3b(0x1ba)+Math[_0x1e8b3b(0x192)](Math[_0x1e8b3b(0x1b4)]()*0xa)*0x96+color+','+(0x32+Math['random']()*0x32)+'%,'+(0x32+Math[_0x1e8b3b(0x1b4)]()*0x32)+'%,'+(0.5+Math[_0x1e8b3b(0x1b4)]())+')',_0x485f0=Math[_0x1e8b3b(0x1b4)](),_0x2d6171=Math['random'](),_0x5ca352,_0x336bce=Math[_0x1e8b3b(0x1b4)]()*_0x52675f*0.1,_0x3800da=Math[_0x1e8b3b(0x1c9)](Math['random']()*0x2),_0x56cd1b=Math[_0x1e8b3b(0x192)](Math['random']()*0x4)+0x1,_0x4df889=0.3+Math['random']()*0x2,_0x22f6dc;if(Math[_0x1e8b3b(0x1b4)]()>0.5)_0x22f6dc=!![];else _0x22f6dc=![];Math[_0x1e8b3b(0x1b4)]()>0.85&&(_0x143ce0=!![],_0x45d068=Math[_0x1e8b3b(0x1b4)]()*0.01*_0x52675f,_0x2267b9='hsla('+Math[_0x1e8b3b(0x192)](Math[_0x1e8b3b(0x1b4)]()*0xa)*0x96+color+','+(0x32+Math[_0x1e8b3b(0x1b4)]()*0x32)+'%,'+(0x14+Math[_0x1e8b3b(0x1b4)]()*0x3c)+'%,'+Math[_0x1e8b3b(0x1b4)]()+')',Math[_0x1e8b3b(0x1b4)]()>0.8&&(_0x5ca352=!![],_0x2267b9=_0x1e8b3b(0x1ba)+Math[_0x1e8b3b(0x192)](Math[_0x1e8b3b(0x1b4)]()*0xa)*0x96+color+','+(0x32+Math[_0x1e8b3b(0x1b4)]()*0x32)+'%,'+(0x14+Math[_0x1e8b3b(0x1b4)]()*0x3c)+'%,'+Math[_0x1e8b3b(0x1b4)]()+')'));console[_0x1e8b3b(0x1d7)](_0x2267b9);const _0x288700=new grid(_0x40db58,_0x52675f,_0x22c9c9,_0x29c5a3,_0x143ce0,_0x5ca352,_0x45d068,_0x2267b9,_0x3dd733,_0xea121c,_0x3800da,_0x485f0,_0x2d6171,_0x336bce,_0x56cd1b,_0x4df889,_0x22f6dc);grids['push'](_0x288700),_0x288700[_0x1e8b3b(0x1db)](),_0x288700[_0x1e8b3b(0x1b2)](),console[_0x1e8b3b(0x1d7)](_0x288700),descriptionTXT=_0x1e8b3b(0x1ac)+_0x2a36b0+_0x1e8b3b(0x18a)+color+_0x1e8b3b(0x1b5)+width+_0x1e8b3b(0x1a6)+height;}counterVal++,counter[_0x1e8b3b(0x194)]='#'+counterVal,description[_0x1e8b3b(0x194)]=descriptionTXT;}let frame=0x0;generate();let bgColor='hsla('+Math[_0xad6686(0x192)](Math[_0xad6686(0x1b4)]()*0xa)*0x96+color+_0xad6686(0x182),isRunning=![];function main(){const _0x2c7fb5=_0xad6686;ctx[_0x2c7fb5(0x17f)]=bgColor,ctx['fillRect'](0x0,0x0,width,height),grids['forEach'](_0x5706eb=>{const _0x25d6ea=_0x2c7fb5;_0x5706eb['animateGrid'](frame*0.01),_0x5706eb[_0x25d6ea(0x1b2)]();}),isRunning&&(frame++,requestAnimationFrame(main));}main();function onkeydown(_0x3f8571){const _0x2bf55f=_0xad6686;console[_0x2bf55f(0x1d7)](_0x3f8571[_0x2bf55f(0x193)]);if(_0x3f8571[_0x2bf55f(0x193)]==_0x2bf55f(0x1a4))grids=[],color=Math['floor'](0x168*Math[_0x2bf55f(0x1b4)]()),frame=0x0,generate(),bgColor='hsla('+color+0x12c+_0x2bf55f(0x1a9),isRunning=![],main();else{if(_0x3f8571[_0x2bf55f(0x193)]==_0x2bf55f(0x1a7)){if(isRunning)isRunning=![];else isRunning=!![];console[_0x2bf55f(0x1d7)](isRunning),main();}else{if(_0x3f8571[_0x2bf55f(0x193)]=='Enter'){const _0x9be2bb=document[_0x2bf55f(0x1a3)]('a');_0x9be2bb[_0x2bf55f(0x1b7)]='UNKNOWN #'+counterVal+_0x2bf55f(0x1ad),_0x9be2bb['href']=canvas['toDataURL']();if(askForCode())_0x9be2bb[_0x2bf55f(0x1da)]();console['log'](_0x2bf55f(0x19c));}}}}document[_0xad6686(0x1d9)](_0xad6686(0x17a),onkeydown),canvas[_0xad6686(0x1d9)](_0xad6686(0x19b),()=>{const _0x281cd2=_0xad6686;grids=[],color=Math[_0x281cd2(0x192)](0x168*Math[_0x281cd2(0x1b4)]()),frame=0x0,generate(),bgColor=_0x281cd2(0x1ba)+color+0x12c+_0x281cd2(0x1a9),isRunning=![],main();});function askForCode(){const _0x6deae8=_0xad6686;let _0x3c96ff=![],_0x1aca27=prompt(_0x6deae8(0x183));return _0x1aca27==0x863?_0x3c96ff=!![]:alert('Download\x20not\x20authorized.'),_0x3c96ff;}
+const desktopInstructions = document.getElementById('desktopInstructions');
+const mobileInstructions = document.getElementById('mobileInstructions');
+const title = document.getElementById('title');
+const canvas = document.getElementById('myCanvas');
+const counter = document.getElementById('counter');
+const description = document.getElementById('description');
+const Aname = document.getElementById('name');
+const pCanvas = document.getElementById('pCanvas')
+
+const screenWidth = screen.width;
+
+if(screenWidth<500) {
+    title.style.top='3vh';
+    title.style.fontSize='2vh';
+    counter.style.top='3vh';
+    counter.style.fontSize='2vh';
+    desktopInstructions.style.display='none';
+    mobileInstructions.style.display='block';
+    mobileInstructions.style.top='7vh';
+    mobileInstructions.style.fontSize='1vh';
+    canvas.style.top='10vh';
+    description.style.top = '80vh';
+    description.style.left='15vw';
+    description.style.fontSize = '1vh';
+    
+    Aname.style.left='15vw';
+    Aname.style.top = '83vh';
+
+    pCanvas.style.display='none';
+}
+else{
+    title.style.padding='none';
+    title.style.top='0vh';
+    counter.style.top='1vh';
+    desktopInstructions.style.display='block';
+    desktopInstructions.style.fontSize='2vh';
+    desktopInstructions.style.top='10vh';
+    mobileInstructions.style.display='none';
+    
+    canvas.style.top='17vh';
+    pCanvas.style.top='17vh';
+    description.style.top = '90vh';
+    description.style.left='15vw';
+    description.style.fontSize='2vh';
+    
+    
+    Aname.style.right='15vw';
+    Aname.style.top = '90vh';
+}
+
+let counterVal =0;
+
+
+const ctx = canvas.getContext('2d');
+
+const width = canvas.width = window.innerWidth*2;
+const height = canvas.height = window.innerHeight*2;
+
+console.log(screen.width)
+
+console.log("a")
+
+class vector{
+    constructor(x,y){
+        this.x=x;
+        this.y=y;
+    }
+}
+
+class point{
+    constructor(x,y){
+        this.x=x;
+        this.y=y;
+        this.xgrow = Math.random();
+        this.ygrow = Math.random();
+    }
+    mirror(o){
+        const x = o.x+(o.x-this.x);
+        const y = o.y+(o.y-this.y);
+
+        return new point(x,y);
+    }
+    oToD(){
+
+    }
+}
+
+class path{
+    constructor(origin,destination,length,bend=100,color='black',lineWidth=3){
+        this.bend = bend;
+        this.origin=origin;
+        this.destination = destination;
+        this.length=length;
+        this.points=[this.origin,this.origin];
+        this.color=color;
+        this.lineWidth=lineWidth;
+        
+        
+    }
+    build(){
+        this.points=[this.origin,this.origin];
+        for(let i=0;i<this.length;i++){
+            const newPoint = new point(this.origin.x+Math.random()*(this.destination.x-this.origin.x),this.origin.y+Math.random()*(this.destination.y-this.origin.y));
+            const anchor1 = new point(newPoint.x+Math.random()*this.bend,newPoint.y+Math.random()*this.bend);
+            const anchor2 = anchor1.mirror(newPoint);
+
+            this.points.push(anchor1);
+            
+            this.points.push(newPoint);
+            this.points.push(anchor2);
+        }
+
+        const anchor1 = new point(this.destination.x+Math.random()*this.bend,this.destination.y+Math.random()*this.bend);
+        const anchor2 = anchor1.mirror(this.destination);
+        this.points.push(anchor1);
+        this.points.push(this.destination);
+        this.points.push(anchor2);
+
+    }
+    animate(val,index,depth){
+        if(index==1){
+            this.points.forEach((p)=>{
+            p.x=p.x+p.xgrow*val;
+            p.y=p.y+p.ygrow*val;
+            })
+        }
+        else if(index==1){
+            this.bend=this.bend+depth*val;
+        }
+        else if(index==2){
+            this.lineWidth=this.lineWidth+depth*val*0.1;
+        }
+        
+    }
+    draw(){
+       /* this.points.forEach((p)=>{
+            ctx.beginPath();
+            ctx.fillStyle = 'blue';
+            ctx.arc(p.x,p.y,this.lineWidth,0,Math.PI*2);
+            ctx.fill()
+
+        })*/
+       //ctx.moveTo(this.origin.x,this.origin.y);
+       ctx.lineWidth=this.lineWidth;
+       ctx.strokeStyle=this.color;;
+       for(let i=0;i<this.length+1;i++){
+            const pIndex = i*3;
+            ctx.beginPath();
+            ctx.moveTo(this.points[pIndex].x,this.points[pIndex].y);
+            ctx.bezierCurveTo(this.points[pIndex+1].x, this.points[pIndex+1].y, this.points[pIndex+2].x, this.points[pIndex+2].y, this.points[pIndex+3].x, this.points[pIndex+3].y);
+            ctx.stroke();
+       }
+
+
+
+    }
+
+}
+
+class grid{
+    constructor( origin,width,height,division,showSquares=false,fillSquare=false,squareWidth=10,squarecolor='red',pathWidth=3,pathcolor='black',pathBend=100,margin=0,chaos=0,squareOversize=0,animationSpeed,animationDepth,isAnimated=false){
+        this.origin=origin;
+        this.width=width;
+        this.height = height;
+        this.division=division;
+        this.Xspacing=Math.floor(this.width/this.division);
+        this.Yspacing=Math.floor(this.height/this.division);
+        this.paths=[];
+        this.pathBend=pathBend;
+        this.showSquares=showSquares;
+        this.squareWidth=squareWidth;
+        this.pathWidth=pathWidth;
+        this.pathcolor=pathcolor;
+        this.squarecolor=squarecolor;
+        this.margin=margin;
+        this.chaos=chaos;
+        this.squareOversize=squareOversize;
+        this.fillSquare=fillSquare;
+        this.animationSpeed=animationSpeed;
+        this.animationDepth=animationDepth*width*0.001
+        this.isAnimated=isAnimated
+        this.animationIndex;
+        if(isAnimated) this.animationIndex=Math.floor(Math.random()*4);
+        else this.animationIndex=0;
+
+    }
+    build(){
+        for(let i=0;i<this.division;i++){
+            for(let j=0;j<this.division;j++){
+                const origin = new point(this.origin.x+j*this.Xspacing+(0+this.chaos*Math.random())*this.Xspacing,this.origin.y+i*this.Yspacing+(0+this.chaos*Math.random())*this.Yspacing);
+                const destination = new point((this.origin.x+j*this.Xspacing+(1-this.chaos*Math.random())*this.Xspacing)-this.margin*this.Yspacing,(this.origin.y+i*this.Yspacing+(1-this.chaos*Math.random())*this.Yspacing)-this.margin*this.Yspacing);
+                const myPath = new path(origin,destination,3,this.pathBend);
+                
+
+                this.paths.push(myPath);
+
+            }
+        }
+        this.paths.forEach((p)=>{
+            
+            if(this.showSquares){
+                ctx.lineWidth=this.squareWidth;
+                ctx.strokeStyle=this.squarecolor;
+                ctx.fillStyle=this.squarecolor;
+                const width = p.destination.x-p.origin.x;
+                const height = p.destination.y-p.origin.y;
+                if(this.fillSquare) ctx.fillRect(p.origin.x-this.squareOversize,p.origin.y-this.squareOversize,width+this.squareOversize*2,height+this.squareOversize*2);
+                else ctx.strokeRect(p.origin.x-this.squareOversize,p.origin.y-this.squareOversize,width+this.squareOversize*2,height+this.squareOversize*2);
+            }
+            p.build();
+            p.lineWidth=this.pathWidth;
+            p.color=this.pathcolor;
+            
+            
+        })
+    }
+    animateGrid(val){
+        if(this.isAnimated){
+            if(this.animationIndex<3){
+                this.paths.forEach((p)=>{
+                p.animate(Math.sin(val*this.animationSpeed)*this.animationDepth,this.animationIndex,this.animationDepth)
+                })
+            }
+            else if(this.animationIndex==3){
+                this.squareOversize=this.squareOversize+this.squareOversize*this.animationDepth*Math.sin(val*this.animationSpeed)*0.01;
+            }
+        
+
+        }
+    }
+    draw(){
+        
+        this.paths.forEach((p)=>{
+            if(this.showSquares){
+                ctx.lineWidth=this.squareWidth;
+                ctx.strokeStyle=this.squarecolor;
+                ctx.fillStyle=this.squarecolor;
+                const width = p.destination.x-p.origin.x;
+                const height = p.destination.y-p.origin.y;
+                if(this.fillSquare) ctx.fillRect(p.origin.x-this.squareOversize,p.origin.y-this.squareOversize,width+this.squareOversize*2,height+this.squareOversize*2);
+                else ctx.strokeRect(p.origin.x-this.squareOversize,p.origin.y-this.squareOversize,width+this.squareOversize*2,height+this.squareOversize*2);
+            }
+
+        })
+        this.paths.forEach((p)=>{
+            p.draw();
+            
+        })
+    }
+}
+
+let grids = [];
+
+let color = Math.floor(360*Math.random());
+
+let descriptionTXT;
+
+function generate(){
+    const numGrids = Math.floor(10+Math.random()*100);
+    for(let n=0;n<numGrids;n++){
+
+        const Gorigin = new point(Math.random()*width,Math.random()*height);
+        const maxWidth = width-Gorigin.x;
+        const maxHeight = height -Gorigin.y;
+        const Gwidth = (Math.random()*maxWidth)-100;
+        const Gheight = (Math.random()*maxHeight)-100;
+        let divisions;
+        if(Math.random()>0.5) divisions=Math.floor(Math.random()*width*0.01);
+        else divisions=Math.floor(Math.random()*height*0.01);
+        let showSquares;
+        let squareWidth;
+        let squarecolor;
+        let pathWidth = Gwidth*0.001+Math.random()*Gwidth*0.01;
+        let pathcolor = 'hsla('+Math.floor(Math.random()*10)*150+color+','+(50+(Math.random()*50))+'%,'+(50+(Math.random()*50))+'%,'+(0.5+Math.random())+')';
+        let margin = Math.random()
+        let chaos = Math.random()
+        let fillSquare;
+        let squareOversize = Math.random()*Gwidth*0.1;
+        let pathBend = Math.exp(Math.random()*2);
+        let animationSpeed = Math.floor(Math.random()*4)+1;
+        let animationDepth = 0.3+Math.random()*2;
+        let isAnimated;
+        if(Math.random()>0.5) isAnimated=true;
+        else isAnimated=false;
+        if(Math.random()>0.85) {
+            showSquares=true;
+            squareWidth=Math.random()*0.01*Gwidth;
+            squarecolor='hsla('+Math.floor(Math.random()*10)*150+color+','+(50+(Math.random()*50))+'%,'+(20+(Math.random()*60))+'%,'+(Math.random())+')';
+            if(Math.random()>0.8) {
+                fillSquare=true;
+                squarecolor='hsla('+Math.floor(Math.random()*10)*150+color+','+(50+(Math.random()*50))+'%,'+(20+(Math.random()*60))+'%,'+(Math.random())+')';
+            }
+        }
+        console.log(squarecolor)
+
+       
+        
+
+        const newGrid = new grid(Gorigin,Gwidth,Gheight,divisions,showSquares,fillSquare,squareWidth,squarecolor,pathWidth,pathcolor,pathBend,margin,chaos,squareOversize,animationSpeed,animationDepth,isAnimated);
+        grids.push(newGrid);
+        newGrid.build();
+
+        newGrid.draw();
+        console.log(newGrid);
+        
+        descriptionTXT = 'Number of grids : '+numGrids+'  Base color : '+color+'  Dimensions : '+width+' x '+height;
+
+    }
+    counterVal++
+    counter.innerHTML='#'+counterVal;
+    description.innerHTML=descriptionTXT;
+
+}
+
+
+let frame = 0;
+generate()
+
+let bgColor = 'hsla('+Math.floor(Math.random()*10)*150+color+',60%,70%,1)';
+let isRunning = false;
+
+function main(){
+    ctx.fillStyle=bgColor;
+    ctx.fillRect(0,0,width,height);
+
+    grids.forEach((g)=>{
+        g.animateGrid(frame*0.01);
+        g.draw();
+    })
+
+    if(isRunning){
+        frame++
+        requestAnimationFrame(main);
+    }
+
+}
+
+main()
+
+function onkeydown(e){
+    console.log(e.code)
+    if(e.code=='KeyN'){
+        
+        grids = [];
+        color = Math.floor(360*Math.random());
+        frame=0;
+        generate()
+        bgColor = 'hsla('+color+300+',70%,50%,1)';
+        isRunning=false;
+        main()
+    }
+    else if(e.code=='Space'){
+            if(isRunning)isRunning=false;
+            else isRunning=true;
+            console.log(isRunning)
+            main();
+    }
+    else if(e.code=='Enter'){
+
+
+        
+        const link = document.createElement('a');
+        link.download = '#'+counterVal+'.png';
+        link.href = canvas.toDataURL()
+        
+        if(askForCode())link.click();
+        // Simulate a click on the link to prompt download
+        
+
+        console.log('Instance saved to file.');
+    }
+
+
+}
+
+
+
+document.addEventListener('keydown',onkeydown)
+//canvas.style.filter = 'contrast(1)'
+
+canvas.addEventListener("touchstart", ()=>{
+    grids = [];
+        color = Math.floor(360*Math.random());
+        frame=0;
+        generate()
+        bgColor = 'hsla('+color+300+',70%,50%,1)';
+        isRunning=false;
+        main()
+});
+
+function askForCode() {
+    let isAuthorised=false;
+    // Prompt the user to enter some text
+    let userInput = prompt("Code:");
+    
+    // Check if the user provided input or cancelled the prompt
+    if (userInput == 2147) {
+        isAuthorised=true;
+    } else {
+        alert("Download not authorized.");
+    }
+    return isAuthorised
+}
