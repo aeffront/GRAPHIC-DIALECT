@@ -256,7 +256,7 @@ let color = Math.floor(360*Math.random());
 let descriptionTXT;
 
 function generate(){
-    const numGrids = Math.floor(10+Math.random()*10);
+    const numGrids = Math.floor(1+Math.random()*0);
     for(let n=0;n<numGrids;n++){
 
         const Gorigin = new point(Math.random()*width,Math.random()*height);
