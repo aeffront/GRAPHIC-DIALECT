@@ -1,3 +1,5 @@
+
+
 const desktopInstructions = document.getElementById('desktopInstructions');
 const mobileInstructions = document.getElementById('mobileInstructions');
 const title = document.getElementById('title');
@@ -6,25 +8,35 @@ const counter = document.getElementById('counter');
 const description = document.getElementById('description');
 const Aname = document.getElementById('name');
 const pCanvas = document.getElementById('pCanvas')
+const slider = document.getElementById('slider');
+const sliderValueDisplay = document.getElementById('sliderValue');
 
 const screenWidth = screen.width;
 
 if(screenWidth<500) {
-    title.style.top='3vh';
+    title.style.top='1vh';
     title.style.fontSize='2vh';
-    counter.style.top='3vh';
+    counter.style.top='1vh';
     counter.style.fontSize='2vh';
     desktopInstructions.style.display='none';
     mobileInstructions.style.display='block';
-    mobileInstructions.style.top='7vh';
+    mobileInstructions.style.top='6vh';
+    mobileInstructions.style.width='70vw';
     mobileInstructions.style.fontSize='1vh';
-    canvas.style.top='10vh';
-    description.style.top = '80vh';
+    slider.style.left = '15vw';
+    slider.style.top = '10vh';
+    slider.style.width = '60vw';
+    sliderValueDisplay.style.right = '15vw';
+    sliderValueDisplay.style.top = '9.7vh';
+    sliderValueDisplay.style.fontSize = '1.2vh';
+    
+    canvas.style.top='15vh';
+    description.style.top = '85vh';
     description.style.left='15vw';
     description.style.fontSize = '1vh';
     
     Aname.style.left='15vw';
-    Aname.style.top = '83vh';
+    Aname.style.top = '88vh';
 
     pCanvas.style.display='none';
 }
@@ -35,9 +47,14 @@ else{
     desktopInstructions.style.display='block';
     desktopInstructions.style.fontSize='2vh';
     desktopInstructions.style.top='10vh';
+    desktopInstructions.style.width='35vw';
     mobileInstructions.style.display='none';
-    
-    canvas.style.top='17vh';
+    slider.style.left = '50vw';
+    slider.style.top = '14vh';
+    slider.style.width = '25vw';
+    sliderValueDisplay.style.right = '22vw';
+    sliderValueDisplay.style.top = '12.5vh';
+    canvas.style.top='19vh';
     pCanvas.style.top='17vh';
     description.style.top = '90vh';
     description.style.left='15vw';
@@ -249,14 +266,10 @@ class grid{
     }
 }
 
-let grids = [];
 
-let color = Math.floor(360*Math.random());
-
-let descriptionTXT;
 
 function generate(){
-    const numGrids = Math.floor(10+Math.random()*20);
+    const numGrids = Math.floor(10+Math.random()*gridDensity);
     for(let n=0;n<numGrids;n++){
 
         const Gorigin = new point(Math.random()*width,Math.random()*height);
@@ -291,7 +304,7 @@ function generate(){
                 squarecolor='hsla('+Math.floor(Math.random()*10)*150+color+','+(50+(Math.random()*50))+'%,'+(20+(Math.random()*60))+'%,'+(Math.random())+')';
             }
         }
-        console.log(squarecolor)
+        
 
        
         
@@ -301,7 +314,7 @@ function generate(){
         newGrid.build();
 
         newGrid.draw();
-        console.log(newGrid);
+        
         
         descriptionTXT = 'Number of grids : '+numGrids+'  Base color : '+color+'  Dimensions : '+width+' x '+height;
 
@@ -312,6 +325,13 @@ function generate(){
 
 }
 
+let grids = [];
+
+let color = Math.floor(360*Math.random());
+
+let descriptionTXT;
+
+let gridDensity = slider.value;
 
 let frame = 0;
 generate()
@@ -373,6 +393,17 @@ function onkeydown(e){
 
 }
 
+function sliderChange(){
+    gridDensity = slider.value
+    grids = [];
+    color = Math.floor(360*Math.random());
+    frame=0;
+    generate()
+    bgColor = 'hsla('+color+300+',70%,50%,1)';
+    isRunning=false;
+    main()
+}
+
 
 
 document.addEventListener('keydown',onkeydown)
@@ -388,6 +419,8 @@ canvas.addEventListener("touchstart", ()=>{
         main()
 });
 
+slider.addEventListener("change", sliderChange);
+
 function askForCode() {
     let isAuthorised=false;
     // Prompt the user to enter some text
@@ -401,3 +434,4 @@ function askForCode() {
     }
     return isAuthorised
 }
+
