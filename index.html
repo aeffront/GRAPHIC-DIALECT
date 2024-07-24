@@ -29,6 +29,72 @@
                 font-weight: lighter;
                 position: absolute;
             }
+            input {
+                position: absolute;
+                --c: rgb(0, 0, 0); /* active color */
+                --g: 0.1vh; /* the gap */
+                --l: 0.2vh; /* line thickness*/
+                --s: 3vh; /* thumb size*/
+  
+                width: 400px;
+                height: var(--s); /* needed for Firefox*/
+                --_c: color-mix(in srgb, var(--c), #000 var(--p,100%));
+                -webkit-appearance :none;
+                -moz-appearance :none;
+                appearance :none;
+                background: none;
+                cursor: pointer;
+                overflow: hidden;
+            }
+            input:focus-visible,
+            input:hover{
+                --p: 25%;
+            }
+            input:active,
+            input:focus-visible{
+                --_b: var(--s)
+                
+                
+            }
+            input[type="range"]:focus {
+                outline: none;
+            }
+            /* chromium */
+            input[type="range" i]::-webkit-slider-thumb{
+                height: var(--s);
+                aspect-ratio: 1;
+                border-radius: 0%;
+                box-shadow: 0 0 0 var(--_b,var(--l)) inset var(--_c);
+                border-image: linear-gradient(90deg,var(--_c) 50%,#ababab 0) 0 1/calc(50% - var(--l)/2) 100vw/0 calc(100vw + var(--g));
+                -webkit-appearance: none;
+                appearance: none;
+                transition: .3s;
+            }
+            /* Firefox */
+            input[type="range"]::-moz-range-thumb {
+                height: var(--s);
+                width: var(--s);
+                background: none;
+                border-radius: 50%;
+                box-shadow: 0 0 0 var(--_b,var(--l)) inset var(--_c);
+                border-image: linear-gradient(90deg,var(--_c) 50%,#ababab 0) 0 1/calc(50% - var(--l)/2) 100vw/0 calc(100vw + var(--g));
+                -moz-appearance: none;
+                appearance: none;
+                transition: .3s;
+            }
+            @supports not (color: color-mix(in srgb,red,red)) {
+            input {
+                --_c: var(--c);
+            }
+            }
+            #sliderValue{
+                position: absolute;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                position: absolute;
+                right:15vw;
+                top:5vh;
+            }
             #myCanvas{
                 position: absolute;
                 left: 15vw;
@@ -62,7 +128,7 @@
                 font-weight: lighter;
                 left : 15vw;
                 top: 10vh;
-                width: 70vw;
+                width: 35vw;
                 display: flex;
                 flex-direction: row; /* Align children vertically */
                 gap: 10px;
@@ -79,25 +145,37 @@
 
     </head>
     <body>
+       
+       
         
         <h1 id="title">UNKNOWN</h1>
         <h1 id="counter">#0</h1>
-        <p id="description">Description</p>
-        <p id="name">Arthur Effront</p>
-        
-       
+        <input id="slider" type="range" min="0" max="100" step="1" value="10"></input>
+        <p id="sliderValue"></p>
+        <script>
+            document.getElementById('sliderValue').innerHTML=document.getElementById('slider').value+'%'
+            document.getElementById('slider').addEventListener('input',()=>{document.getElementById('sliderValue').innerHTML=document.getElementById('slider').value+'%'})
+        </script>
         <div class="instructions" id="desktopInstructions" style="display: none; font-size: 2vh;">
             
-            <p>PRESS 'N' to generate</p>
-            <p>PRESS 'Space' to animate </p>
+            <p>- PRESS 'N' to generate</p>
+            <p>- PRESS 'Space' to animate (not every artwork will contain animations)</p>
+            <p>- SLIDE to edit the density (high density may result in slow animation) : </p>
             
         </div>
         <div class="instructions" id="mobileInstructions" style="display: none;">
-            <p>TOUCH to generate</p>
+            <p>- TOUCH to generate</p>
+            <p>- SLIDE to edit the density : </p>
         </div>
         <canvas id="myCanvas"></canvas>
         <canvas id="pCanvas"></canvas>
-        <script src="script.js"></script>
+        <p id="description">Description</p>
+        <p id="name">Arthur Effront</p>
+        
+        
+       
+        
+        <script src="index.js"></script>
         
     </body>
 </html>
